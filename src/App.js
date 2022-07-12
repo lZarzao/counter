@@ -1,5 +1,6 @@
 import './App.css';
 import Button from './components/Button';
+import Counter from './components/Counter'
 import logo from './assets/freecodecamp-logo.png'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <img className='freecodecamp-logo' src={logo} alt='freecodecamp logo' />
       </figure>
       <section className='main-container'>
+        <Counter num='5' />
         <Button text='Click' isClicking={true} click={AddCounter} />
         <Button text='Restart' isClicking={false} click={restartCounter} />
       </section>
