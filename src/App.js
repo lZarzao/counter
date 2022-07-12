@@ -1,8 +1,17 @@
 import './App.css';
+import logo from './assets/freecodecamp-logo.png'
 
 function App() {
   return (
-    <h1>Hello world</h1>
+    <main className='App'>
+      <figure className='freecodecamp-logo-container'>
+        <img 
+          className='freecodecamp-logo'
+          src={logo}
+          alt='freecodecamp logo'
+        />
+      </figure>
+    </main>
   );
 }
 
