@@ -1,20 +1,19 @@
 import './App.css';
 import Button from './components/Button';
-import Counter from './components/Counter'
-import logo from './assets/freecodecamp-logo.png'
-import { useState } from 'react'
+import Counter from './components/Counter';
+import logo from './assets/freecodecamp-logo.png';
+import { useState } from 'react';
 
 function App() {
-
   const [numCounter, setNumCounter] = useState(0);
 
   const AddCounter = () => {
     setNumCounter(numCounter + 1);
-  }
+  };
 
   const restartCounter = () => {
     setNumCounter(0);
-  }
+  };
 
   return (
     <main className='App'>
